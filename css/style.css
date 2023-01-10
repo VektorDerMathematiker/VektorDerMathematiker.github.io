@@ -1,0 +1,418 @@
+@font-face{
+    font-family: Open-Sans;
+    src: url(../font/OpenSans-Light.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Open-Sans;
+}
+
+
+
+:root{
+    --dark: #252627;
+    --red: #BB0A21;
+    --light-red: #fa2e2e;
+    --blue: #4b88a2;
+    --light: #d9d9d9;
+}
+/*******************HEADER*******************************/
+
+
+header {
+    background-image:url(../img/Header_Semesterprojekt2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 70%;
+    height: 20rem;
+    width: 100%;
+    background-color: black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#headerBox{
+    width: 30rem;
+    height: 15rem;
+    color: var(--light-red);
+    text-align: center;
+    background-color: #252627B3;
+    border-radius: 3rem;
+    font-size: 200%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*****************NAV*****************/
+
+nav{
+    
+    background-color: var(--dark);
+    text-align: center;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: sticky ;
+    top: 0;
+}
+
+.nav-item{
+    width: 25%;
+    display: flex;
+    height: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: color 2s, background 2s ;
+}
+
+nav a{
+    color: var(--light-red);
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    height: 4rem;
+}
+.nav-item:hover {
+    background: var(--light-red);
+    color: var(--dark);
+    
+}
+
+/***********HOME-MAIN*************/
+
+.main{
+    background-image:url(../img/Header_Semesterprojekt2.jpg);
+    background-repeat: no-repeat;
+    width:100%;
+    height: 60rem;
+    display: flex;
+    background-size: 130%;
+    justify-content: center;
+    align-items: center;
+}
+#mainBox {
+    width: 60rem;
+    height: 30rem;
+    color: var(--light-red);
+    text-align: center;
+    background-color: #252627B3;
+    border-radius: 3rem;
+    font-size: 400%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+/*************Die Geschichte der Ultras******************/
+
+.container1 {
+    padding: 4%;
+
+  }
+  .container2 {
+    padding: 4%;
+    background-color:var(--light);
+    }
+  
+  .row{
+    display:flex;
+    
+  }
+  
+  .column-60 {
+    width: 60%;
+    padding: 2%;
+  }
+  
+  .column-40 {
+    width: 40%;
+    padding: 2%;
+  }
+
+  p{
+    font-size: 100%;
+  }
+  
+  .large-font {
+    font-size: 170%;
+    color:var(--light-red);
+    margin-bottom: 3%;
+  }
+  
+  .xlarge-font {
+    font-size: 250%;
+  }
+  h2{
+    margin-top: 1%;
+    text-align:center;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    box-shadow: 5px 5px 15px var(--dark);
+    
+  }
+/*************Landstrssler**************/
+.Landstrassler{
+  height: 150rem;
+}
+
+.leftColumn {
+    width: 60%;
+    float: left;
+    display: block;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 100rem;
+}
+h1 {
+  text-align: center;
+}
+.leftColumn p {
+  font-size: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.rightColumn {
+    width:30%;
+    float: right;
+    background-color: var(--light);
+    display: block;
+    justify-content: center;
+    padding-top: 4rem;
+
+    height: 145rem;
+}
+
+
+#Text p {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+video {
+  width: 80%;
+  display:flex;
+  
+}
+
+.rightColumn img {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem ;
+  
+  size: 30%;
+}
+
+/*****************Bildergalerie***************/
+
+.BilderGalerie img {
+	padding: 0;
+	margin: 0;	
+	width: 10%;
+  display: inline-block;
+}
+
+.BilderGalerie img:hover {
+  width: 50%;
+  margin: 2rem;
+  transition: width 2s, margin 2s;
+}
+
+main {
+  height: 200rem;
+}
+
+
+
+
+/******************Impressum***********/
+
+#impressum {
+  width: 40%;
+  height: 15rem;
+  background-color:#252627B3;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  
+}
+a{
+  text-decoration: none;
+  color: var(--light-red);
+}
+
+#impressum p {
+  color:var(--light-red);
+}
+/******************Footer**************/
+
+footer{
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--light-red);
+    height:3rem;
+    font-size: 130%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: sticky;
+    bottom: 0;
+}
+
+
+/*************Responsive***********/
+
+@media (max-width: 700px){
+  nav{
+    display: block;
+    background-color: var(--dark);
+    width: 100%;
+    height: 15rem;
+    position: static;
+  }
+
+.nav-item{
+    width: 100%;
+    display: block;
+    height: 3rem;
+
+    transition: color 2s, background 2s ;
+}
+
+nav a{
+    color: var(--light-red);
+    text-decoration: none;
+    text-align: center;
+    width: 20%;
+    height: 4rem;
+}
+
+
+header {
+
+
+ 
+  background-size: 100%;
+  height: 20rem;
+  width: 100%;
+
+
+  display: flex;
+
+}
+
+#headerBox{
+  width: 20rem;
+  height:10rem;
+  border-radius: 2rem;
+  font-size: 100%;
+}
+
+.main{
+
+  width:100%;
+  height: 20rem;
+  display: flex;
+  background-size: 130%;
+  justify-content: center;
+  align-items: center;
+}
+#mainBox {
+  width: 50%;
+  height: 10rem;
+
+
+  border-radius: 2rem;
+  font-size: 100%;
+
+  
+}
+
+.Landstrassler{
+  height: 100rem;
+}
+
+.leftColumn {
+    width: 100%;
+
+    display: block;
+    justify-content: center;
+    padding-top: 4rem;
+    
+    height: auto;
+}
+
+.leftColumn p {
+  font-size: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.rightColumn {
+    width: 100%;
+  	height: auto;
+
+    display: block;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+
+#Text p {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+video {
+  width: 50%;
+  display:flex;
+  
+}
+
+.rightColumn img {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem ;
+  
+  size: 30%;
+}
+
+
+.BilderGalerie img {
+	padding-top: 3rem;
+	margin: 0;	
+	width: 60%;
+  display: block;
+  justify-content: center;
+}
+
+.BilderGalerie img:hover {
+  width: 100%;
+  margin: 2rem;
+  transition: width 2s, margin 2s;
+}
+
+main {
+  height: 220rem;
+}
